@@ -1,0 +1,20 @@
+{
+  "name": "pfe-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.1.2"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron-packager": "^17.1.1",
+    "python-shell": "^5.0.0"
+  }
+}

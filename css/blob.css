@@ -1,0 +1,52 @@
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 150px;
+  width: 600px;
+  z-index: -1;
+  animation: move 10s ease-in-out infinite;
+  transform-origin: 40% 40%;
+}
+
+@keyframes move {
+  0%   { transform: scale(1)   translate(10px, -30px); }
+  38%  { transform: scale(0.8, 1) translate(800px, 300px) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(800px, 300px) rotate(160deg); }
+  78%  { transform: scale(1.1) translate(0vw, 80px) rotate(-30deg); }
+  80%  { transform: scale(1.1) translate(0vw, 80px) rotate(-30deg); }
+  100% { transform: scale(1)   translate(10px, -30px); }
+}
+
+.blob1 {
+  position: absolute;
+  top: 0;
+  left: 800px;
+  fill: #b49aca;
+  margin-top: 150px;
+  width: 500px;
+  z-index: -1;
+  animation: move 10s ease-in-out infinite;
+  transform-origin: 40% 40%;
+}
+
+.blob3 {
+  position: absolute;
+  fill: #b586db;
+  top: 0;
+  left: 300px;
+  margin-top: 200px;
+  width: 500px;
+  z-index: -1;
+  animation: move 6s ease-in-out infinite;
+  transform-origin: 20% 20%;
+}
+
+.blob2 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  margin-top: 150px;
+  width: 600px;
+  z-index: -1;
+}

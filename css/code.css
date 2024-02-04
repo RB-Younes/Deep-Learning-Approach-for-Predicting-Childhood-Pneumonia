@@ -1,0 +1,111 @@
+body {
+  font-family: Roboto,Arial;
+  width: 100%;
+  min-height: 100%;
+  background-color: #fbefff;
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.Container_style{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+  margin-left: 230px;
+}
+
+
+
+.content2{
+  margin-top: -80px;
+}
+
+.scroller-container{
+  position: fixed;
+  margin-top: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 850px;
+  margin-left: 360px;
+  z-index:2;
+}
+
+.scrollers-selected{
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+  margin-left:10px ;
+  background-color: #8c4f9f;
+  transition: background-color 0.8s;
+}
+
+.scrollers-non-selected{
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-left:10px ;
+  background-color: #b49aca;
+  transition: background-color 0.8s;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-top: 80px;
+  margin-left: -16px;
+  z-index: -1;
+}
+
+.video-reader-cnt{
+  position: fixed;
+  margin-top: 336px;
+  margin-left: 917.1px;
+  z-index: 2;
+}
+
+.animatewindow {
+  opacity: 1;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 0.6s;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.animatewindow-inv {
+  animation-name: animate-pop-inv;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 0.6s;
+  opacity: 0;
+}
+
+@keyframes animate-pop-inv {
+  0% {
+     opacity: 1;
+    transform: scale(1, 1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+}

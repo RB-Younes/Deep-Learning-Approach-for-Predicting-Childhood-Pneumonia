@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script type="module" src="scripts/anim-3c.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="scripts/menues.js"></script>
+  <script type="text/javascript" src="scripts/pred.js"></script>
+  <meta charset="utf-8" />
+  <title>Pediatric Pneumonia Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/header-bar.css">
+  <link rel="stylesheet" href="css/style-pred.css">
+</head>
+
+<body onload="active_btn();">
+  <nav class="header" id="header-id">
+    <div class="logo-container">
+      <img class="logo" src="icons/logo 800x150.png">
+      <div class="Tooltip">Pediatric Pneumonia Prediction</div>
+    </div>
+    <nav class="btns-container">
+      <a href="../PFE APP/menu.html" id="a1" class="container">
+        <img class="btn-icon" src="buttons/home.png" alt="">
+        <div class="Tooltip">Home page</div>
+      </a>
+      <a href="../PFE APP/prediction.html" id="a2" class="container">
+        <img class="btn-icon" src="buttons/apps.png" alt="">
+        <div class="Tooltip">Prediction</div>
+      </a>
+      <a href="../PFE APP/code.html" id="a3" class="container">
+        <img class="btn-icon" src="buttons/api.png" alt="">
+        <div class="Tooltip">Guide</div>
+      </a>
+      <a href="../PFE APP/About.html" id="a4" class="container">
+        <img class="btn-icon" src="buttons/comment-info.png" alt="">
+        <div class="Tooltip">About</div>
+      </a>
+    </nav>
+  </nav>
+ 
+  <div>
+    <video autoplay muted id="myVideo">
+      <source src="Videos/VID BG B.mp4" type="video/mp4">
+    </video>
+    <div class="Container">
+      <iframe class="iframe" id="i-frame" src="http://127.0.0.1:7860/" width="1148px" height="693px"></iframe>
+    </div>
+    <div class="animatewindow-btn" id="container3D"></div>
+    <div class="btns-container2">
+      <button class="btns animatewindow-btn" onclick="i_frame_ent();set_txt_3c();">
+        Three Classes Classification
+      </button>
+    </div>
+    <div class="btns-container3">
+      <button class="btns animatewindow-btn" onclick="i_frame_ent1();set_txt_2c();">
+        Binary <br> Classification
+      </button>
+    </div>
+    <div class="btns-container4">
+      <button class="btns animatewindow-btn" onclick="i_frame_ent2();set_txt_3c_a();">
+        Audio Classification
+      </button>
+    </div>
+    <div class="title-container">
+      <p id="title"></p>
+    </div>
+    <div class="desc-container">
+      <p id="desc"></p>
+    </div>
+  </div>
+</body>
+
+</html>

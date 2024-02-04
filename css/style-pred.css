@@ -1,0 +1,152 @@
+body {
+  font-family: Roboto,Arial;
+  width: 100%;
+  min-height: 100%;
+  background-color: #fbefff;
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.Container{
+  position: fixed;
+  margin-top: 207.2px;
+  margin-left: 659px;
+  z-index: 2;
+}
+
+#container3D canvas{
+  position: fixed;
+  height: 600px;
+  width: 560px;
+  margin-top: 370px;
+  margin-left: 110px;
+  z-index:-1;
+}
+
+.iframe{
+  border:none;
+  visibility: hidden;
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-top: 80px;
+  margin-left: -16px;
+  z-index: -1;
+}
+
+.btns-container2{
+  position: fixed;
+  top: 760px;
+  left: 230px;
+  z-index: 10;
+}
+.btns-container3{
+  position: fixed;
+  top: 275px;
+  left: 230px;
+  z-index: 10;
+}
+
+.btns-container4{
+  position: fixed;
+  top: 517.5px;
+  left: 485px;
+  z-index: 10;
+}
+
+.btns{
+  width: 160px;
+  height: 75px; 
+  padding: 10px;
+  border: solid;
+  border-width: 5px;
+  cursor: pointer;
+  border-color: #6f51b7;
+  color: #6f51b7;
+  border-radius: 10px;
+  background-color: white;
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.8s;
+}
+
+.btns:hover {
+  background-color: #e7dbf0;
+}
+.btns:active {
+  background-color: #f9f2fd;
+}
+
+.animatewindow-btn{
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 1s;
+}
+
+.animatewindow {
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 0.5s;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.animatewindow-inv {
+  animation-name: animate-pop-inv;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-duration: 0.3s;
+}
+
+@keyframes animate-pop-inv {
+  0% {
+     opacity: 1;
+    transform: scale(1, 1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+}
+.title-container{
+  position: fixed;
+  top: 900px;
+  left: 768px;
+  width: 500px;
+  z-index: 10;
+}
+
+.desc-container{
+    position: fixed;
+    top: 920px;
+    left: 1085px;
+    width: 650px;
+    z-index: 10;
+}
+
+#title{
+    font-weight: bold;
+    font-size: xx-large;
+    color: #232b73;
+}
+
+#desc{
+  font-weight: bold;
+  font-size: larger;
+  color: #6f51b7;
+}
